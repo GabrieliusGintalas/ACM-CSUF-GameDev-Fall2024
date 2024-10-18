@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ItemPickupCompleted : MonoBehaviour
@@ -9,6 +10,7 @@ public class ItemPickupCompleted : MonoBehaviour
     private TextMeshProUGUI keyBindText;
     [SerializeField] private ItemSO item;
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private string displayText = "Press E to pick up";
     private bool isPlayerInRange = false;
 
     private void Awake() {
@@ -18,7 +20,7 @@ public class ItemPickupCompleted : MonoBehaviour
 
     void Start(){
         keyBindObj.SetActive(false);
-        keyBindText.text = "Press E to pick up " + item.itemName;
+        keyBindText.text = displayText + item.itemName;
     }
 
     private void Update() {
@@ -41,7 +43,7 @@ public class ItemPickupCompleted : MonoBehaviour
         }
     }
 
-    public void PickUp(){
+    public virtual void PickUp(){
         Debug.Log("You picked up: " + item.itemName);
         Destroy(gameObject);
     }

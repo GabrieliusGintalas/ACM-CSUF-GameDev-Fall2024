@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class CamFollowPlayer : MonoBehaviour
 {
-    [SerializeField] private Transform playerTransform;
+    private Transform playerTransform;
 
+    void Start()
+    {
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            playerTransform = player.transform;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y, transform.position.z);
+        if(playerTransform != null)
+        {
+            transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y, transform.position.z);
+        }
+        
     }
 }
