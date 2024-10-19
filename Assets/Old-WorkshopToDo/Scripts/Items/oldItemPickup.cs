@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ItemPickup : MonoBehaviour
+public class oldItemPickup : MonoBehaviour
 {
     [SerializeField] private GameObject keyBindObj;
     private TextMeshProUGUI keyBindText;

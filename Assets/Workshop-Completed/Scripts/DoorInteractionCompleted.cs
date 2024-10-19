@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorInteraction : MonoBehaviour
+public class DoorInteractionCompleted : MonoBehaviour
 {
     private Vector3 originalPosition;
     [SerializeField] private Transform openedPosition;
