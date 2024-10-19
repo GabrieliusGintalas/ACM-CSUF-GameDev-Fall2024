@@ -19,6 +19,8 @@ public class AudioManagerComplete : MonoBehaviour
     [SerializeField] private Slider sfxVolumeSlider;
     [SerializeField] private TextMeshProUGUI musicVolumeText;
     [SerializeField] private TextMeshProUGUI sfxVolumeText;
+    [SerializeField] private KeyCode toggleAudioSettingsKey = KeyCode.Escape;
+    [SerializeField] private TextMeshProUGUI keyBindText;
     private bool isAudioPanelActive = false;
 
     private void Awake() {
@@ -29,6 +31,7 @@ public class AudioManagerComplete : MonoBehaviour
         }
         audioSource = GetComponent<AudioSource>();
         audioSettingsPanel.SetActive(false);
+        DontDestroyOnLoad(gameObject);
     }
     
     void Start()
@@ -45,6 +48,13 @@ public class AudioManagerComplete : MonoBehaviour
 
         musicVolumeSlider.onValueChanged.AddListener(SetMusicVolume);
         sfxVolumeSlider.onValueChanged.AddListener(SetSFXVolume);
+        keyBindText.text = "Press " + toggleAudioSettingsKey.ToString() + " to toggle audio settings";
+    }
+
+    void Update(){
+        if(Input.GetKeyDown(toggleAudioSettingsKey)){
+            ToggleAudioSettingsPanel();
+        }
     }
 
     public void ToggleAudioSettingsPanel(){
@@ -71,6 +81,4 @@ public class AudioManagerComplete : MonoBehaviour
         int volumePercentage = Mathf.RoundToInt(value * 100);
         sfxVolumeText.text = volumePercentage.ToString();
     }
-
-
 }
