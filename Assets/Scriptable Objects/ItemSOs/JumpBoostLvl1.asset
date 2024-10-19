@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7515a149cf631f3468e0572ba1a53ee0, type: 3}
-  m_Name: IceCream
+  m_Name: JumpBoostLvl1
   m_EditorClassIdentifier: 
-  itemName: IceCream
-  itemSprite: {fileID: 21300000, guid: 2fbef678a942f2a49a5b3d3b3245bc09, type: 3}
-  itemType: 0
+  itemName: Jump Boost Lvl. 1
+  itemSprite: {fileID: 21300000, guid: b0d656ee482ce894b9b5fbc9e0fb3a5b, type: 3}
+  itemType: 2
   speedBoostAmount: 0
-  jumpBoostAmount: 0
+  jumpBoostAmount: 1

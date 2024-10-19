@@ -216,8 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66fc6f40c4e1521429385fb93f7af099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpStrength: 5
+  playerData: {fileID: 11400000, guid: cc937ea5977d69c49a60b9618aa0c9ed, type: 2}
   groundCheck: {fileID: 1658345223723369169}
   groundLayer:
     serializedVersion: 2

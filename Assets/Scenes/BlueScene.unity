@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueGround (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1088452545395845709, guid: 0d56110360491574cbb0d7bed43212b3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4106274381661351969, guid: 0d56110360491574cbb0d7bed43212b3, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.064
@@ -371,6 +375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueGround (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1088452545395845709, guid: 0d56110360491574cbb0d7bed43212b3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4106274381661351969, guid: 0d56110360491574cbb0d7bed43212b3, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.064
@@ -437,6 +445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueGround (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1088452545395845709, guid: 0d56110360491574cbb0d7bed43212b3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4106274381661351969, guid: 0d56110360491574cbb0d7bed43212b3, type: 3}
       propertyPath: m_LocalScale.x
       value: 14.6395
@@ -502,6 +514,10 @@ PrefabInstance:
     - target: {fileID: 1088452545395845709, guid: 0d56110360491574cbb0d7bed43212b3, type: 3}
       propertyPath: m_Name
       value: BlueGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088452545395845709, guid: 0d56110360491574cbb0d7bed43212b3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4106274381661351969, guid: 0d56110360491574cbb0d7bed43212b3, type: 3}
       propertyPath: m_LocalScale.x

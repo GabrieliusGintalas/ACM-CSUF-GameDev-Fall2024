@@ -7,8 +7,6 @@ public class PlayerMovementCompleted : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpStrength = 5f;
     private float originalScale;
     private float moveDirection;
     [SerializeField] private Transform groundCheck;
@@ -45,12 +43,12 @@ public class PlayerMovementCompleted : MonoBehaviour
     }
 
     void FixedUpdate(){
-        rb.velocity = new Vector2(moveSpeed * moveDirection, rb.velocity.y);
+        rb.velocity = new Vector2(PlayerStatsCompleted.inst.GetPlayerMoveSpeed() * moveDirection, rb.velocity.y);
     }
 
     public void Jump(){
         anim.SetTrigger("jumping");
-        rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
+        rb.velocity = new Vector2(rb.velocity.x, PlayerStatsCompleted.inst.GetPlayerJumpForce());
     }
 
     public void CheckSpriteFlip(){

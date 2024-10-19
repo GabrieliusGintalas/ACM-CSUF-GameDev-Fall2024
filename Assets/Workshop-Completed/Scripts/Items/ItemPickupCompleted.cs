@@ -10,7 +10,7 @@ public class ItemPickupCompleted : MonoBehaviour
     private TextMeshProUGUI keyBindText;
     [SerializeField] private ItemSO item;
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private string displayText = "Press E to pick up";
+    [SerializeField] private string displayText = "Press E to pick up:";
     private bool isPlayerInRange = false;
 
     private void Awake() {
@@ -20,7 +20,7 @@ public class ItemPickupCompleted : MonoBehaviour
 
     void Start(){
         keyBindObj.SetActive(false);
-        keyBindText.text = displayText + item.itemName;
+        keyBindText.text = displayText + "\n" + item.itemName;
     }
 
     private void Update() {
@@ -45,6 +45,18 @@ public class ItemPickupCompleted : MonoBehaviour
 
     public virtual void PickUp(){
         Debug.Log("You picked up: " + item.itemName);
+        ModifyPlayerStats(item.itemType);
         Destroy(gameObject);
+    }
+
+    public void ModifyPlayerStats(ItemType itemTyo){
+        switch(itemTyo){
+            case ItemType.SpeedBoost:
+                PlayerStatsCompleted.inst.AddPlayerSpeed(item.speedBoostAmount);
+                break;
+            case ItemType.JumpBoost:
+                PlayerStatsCompleted.inst.AddJumpForce(item.jumpBoostAmount);
+                break;
+        }
     }
 }
