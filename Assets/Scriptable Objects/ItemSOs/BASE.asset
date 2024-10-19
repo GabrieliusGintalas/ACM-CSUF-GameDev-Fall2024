@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 
   itemSprite: {fileID: 0}
+  itemType: 0
+  audioClip: {fileID: 0}
+  speedBoostAmount: 0
+  jumpBoostAmount: 0

@@ -15,5 +15,6 @@ MonoBehaviour:
   itemName: Speed Boost Lvl. 1
   itemSprite: {fileID: 21300000, guid: 6e61e3d02d4db9e4b8ac4032073704a9, type: 3}
   itemType: 1
+  audioClip: {fileID: 8300000, guid: 13499fa70165fe54b94bc023c434a13a, type: 3}
   speedBoostAmount: 0.5
   jumpBoostAmount: 0

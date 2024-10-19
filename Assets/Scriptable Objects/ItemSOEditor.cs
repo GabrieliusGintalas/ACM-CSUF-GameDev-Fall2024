@@ -11,6 +11,7 @@ public class ItemSOEditor : Editor
         itemSO.itemName = EditorGUILayout.TextField("Item Name", itemSO.itemName);
         itemSO.itemSprite = (Sprite)EditorGUILayout.ObjectField("Item Sprite", itemSO.itemSprite, typeof(Sprite), false);
         itemSO.itemType = (ItemType)EditorGUILayout.EnumPopup("Item Type", itemSO.itemType);
+        itemSO.audioClip = (AudioClip)EditorGUILayout.ObjectField("Audio Clip", itemSO.audioClip, typeof(AudioClip), false);
 
         if (itemSO.itemType == ItemType.SpeedBoost)
         {

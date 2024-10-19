@@ -15,5 +15,6 @@ MonoBehaviour:
   itemName: IceCream
   itemSprite: {fileID: 21300000, guid: 2fbef678a942f2a49a5b3d3b3245bc09, type: 3}
   itemType: 0
+  audioClip: {fileID: 0}
   speedBoostAmount: 0
   jumpBoostAmount: 0

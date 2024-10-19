@@ -720,7 +720,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8024387523535160527}
+        m_TargetAssemblyTypeName: AudioManagerComplete, Assembly-CSharp
+        m_MethodName: SetMusicVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &440145666
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +925,7 @@ GameObject:
   - component: {fileID: 619637488}
   - component: {fileID: 619637487}
   m_Layer: 5
-  m_Name: Volume
+  m_Name: SoundFX Volume - SideText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1532,9 +1544,9 @@ AudioSource:
   m_GameObject: {fileID: 928917127}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1526004485173249866, guid: 7ae29d4fd8af47d4ab4738685286492b, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1631,7 +1643,7 @@ GameObject:
   - component: {fileID: 984043833}
   - component: {fileID: 984043832}
   m_Layer: 5
-  m_Name: Volume
+  m_Name: Music Volume - SideText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2014,7 +2026,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8024387523535160527}
+        m_TargetAssemblyTypeName: AudioManagerComplete, Assembly-CSharp
+        m_MethodName: SetSFXVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1079660838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2687,7 +2711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1641962269
 Transform:
   m_ObjectHideFlags: 0
@@ -2936,7 +2960,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2019169933}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8024387523535160527}
+        m_TargetAssemblyTypeName: AudioManagerComplete, Assembly-CSharp
+        m_MethodName: ToggleAudioSettingsPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2019169933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3168,7 +3204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2139386388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3453,14 +3489,6 @@ PrefabInstance:
       propertyPath: speedText
       value: 
       objectReference: {fileID: 620753604}
-    - target: {fileID: 328650271255086558, guid: 2d408d760dd382944a5b8d7e05cd2717, type: 3}
-      propertyPath: playerJumpForce
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 328650271255086558, guid: 2d408d760dd382944a5b8d7e05cd2717, type: 3}
-      propertyPath: playerMoveSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4561552858302337145, guid: 2d408d760dd382944a5b8d7e05cd2717, type: 3}
       propertyPath: m_Name
       value: PlayerStatManager-Completed
@@ -3562,6 +3590,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3652170868204800633, guid: 792e40375845b5c4d9e5f7700b038c22, type: 3}
+      propertyPath: audioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 7ae29d4fd8af47d4ab4738685286492b, type: 2}
+    - target: {fileID: 3652170868204800633, guid: 792e40375845b5c4d9e5f7700b038c22, type: 3}
+      propertyPath: sfxVolumeText
+      value: 
+      objectReference: {fileID: 619637487}
+    - target: {fileID: 3652170868204800633, guid: 792e40375845b5c4d9e5f7700b038c22, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 84d85763d4631fa45936eb4196be1a4e, type: 3}
+    - target: {fileID: 3652170868204800633, guid: 792e40375845b5c4d9e5f7700b038c22, type: 3}
+      propertyPath: musicVolumeText
+      value: 
+      objectReference: {fileID: 984043832}
+    - target: {fileID: 3652170868204800633, guid: 792e40375845b5c4d9e5f7700b038c22, type: 3}
+      propertyPath: sfxVolumeSlider
+      value: 
+      objectReference: {fileID: 1073857379}
+    - target: {fileID: 3652170868204800633, guid: 792e40375845b5c4d9e5f7700b038c22, type: 3}
+      propertyPath: musicVolumeSlider
+      value: 
+      objectReference: {fileID: 367860150}
+    - target: {fileID: 3652170868204800633, guid: 792e40375845b5c4d9e5f7700b038c22, type: 3}
+      propertyPath: audioSettingsPanel
+      value: 
+      objectReference: {fileID: 155937241}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3570,6 +3626,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 928917130}
   m_SourcePrefab: {fileID: 100100000, guid: 792e40375845b5c4d9e5f7700b038c22, type: 3}
+--- !u!114 &8024387523535160527 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3652170868204800633, guid: 792e40375845b5c4d9e5f7700b038c22, type: 3}
+  m_PrefabInstance: {fileID: 8024387523535160526}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928917127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d274f1a23d6ce4ab4a5fe39aed4830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8240152607869944148
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,5 +15,6 @@ MonoBehaviour:
   itemName: Door
   itemSprite: {fileID: 21300000, guid: 9a3f04a3595deb748a3a8b0e5f49921c, type: 3}
   itemType: 0
+  audioClip: {fileID: 0}
   speedBoostAmount: 0
   jumpBoostAmount: 0

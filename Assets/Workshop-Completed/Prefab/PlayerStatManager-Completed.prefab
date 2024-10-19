@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26eb9696c21a8240a95f5411965bc72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerData: {fileID: 11400000, guid: cc937ea5977d69c49a60b9618aa0c9ed, type: 2}
+  speedText: {fileID: 0}
+  jumpText: {fileID: 0}
+  playerMoveSpeed: 5
+  playerJumpForce: 5
