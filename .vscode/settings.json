@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "ACM-CSUF-GameDev-Fall2024.sln"
+    "dotnet.defaultSolution": "ACM-CSUF-GameDev-Workshop2.sln"
 }

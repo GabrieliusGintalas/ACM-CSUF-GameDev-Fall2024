@@ -8,6 +8,7 @@ using TMPro;
 
 public class AudioManager : MonoBehaviour
 {
+    // static member to hold the instance
     public static AudioManager inst {get; private set;}
     
     private AudioSource audioSource;
@@ -63,7 +64,8 @@ public class AudioManager : MonoBehaviour
         //TODO: set the isAudioPanelActive to the opposite of its current value
 
         //TODO: set audioSettingsPanel's active state to isAudioPanelActive
-        //    hint: use the SetActive method of the GameObject class
+        //      hint: use the SetActive method of the GameObject class
+        //      ?.SetActive(?);
     }
 
 
@@ -74,12 +76,15 @@ public class AudioManager : MonoBehaviour
 
         //TODO: Set the "Music" float of the audioMixer to the volume value 
         //      hint: use the audioMixer.SetFloat(string, float) method
+        //      ? = audioMixer.SetFloat(?,?);
 
         //TODO: take the 'value' parameter (0 to 1) and convert it to a percentage (0 to 100)
         //      hint: use Mathf.RoundToInt to round the value to the nearest integer
+        //      ? = ?.RoundToInt(?);
 
         //TODO: set the text of the musicVolumeText to the volumePercentage
         //     hint: use the ToString method to convert the integer to a string
+        //     musicVolumeText.text = ?;
     }
 
     public void SetSFXVolume(float value)
@@ -89,14 +94,15 @@ public class AudioManager : MonoBehaviour
 
         //TODO: Set the "Sound Effects" float of the audioMixer to the volume value 
         //      hint: use the audioMixer.SetFloat(string, float) method
-
+        //      ? = audioMixer.SetFloat(?,?);
 
         //TODO: take the 'value' parameter (0 to 1) and convert it to a percentage (0 to 100)
         //      hint: use Mathf.RoundToInt to round the value to the nearest integer
-
+        //      ? = ?.RoundToInt(?);
 
         //TODO: set the text of the sfxVolumeText to the volumePercentage
         //     hint: use the ToString method to convert the integer to a string
+        //     sfxVolumeText.text = ?;
         
     }
 }

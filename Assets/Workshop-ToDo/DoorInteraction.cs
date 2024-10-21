@@ -26,9 +26,9 @@ public class DoorInteraction : MonoBehaviour
         float time = 0;
         Vector3 startPosition, endPosition;
 
-        //TODO: if the door is open, set the startPosition to where the door is currently, and the endPosition to where the door should end up
-        //      if the door is closed, vice versa
-        //hint:
+        // TODO: if the door is open, set the startPosition to where the door is currently, and the endPosition to where the door should end up
+        //       if the door is closed, vice versa
+        // hint: look at our declared variables above! 
         // if (isDoorOpen) {
         //     startPosition = ?
         //     endPosition = ?
@@ -39,10 +39,9 @@ public class DoorInteraction : MonoBehaviour
 
         while (time < 1) {
             time += Time.deltaTime * doorMoveSpeed;
-            //TODO: set the doors transform's CURRENT position to a Lerp between the start and end positions
-            //      hint: ? = Vector3.Lerp(????, ????, ???);
-            //      https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html
-
+            // TODO: set the doors transform's CURRENT position to a Lerp between the start and end positions
+            // https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html
+            // transform.position = Vector3.Lerp(???,???,???);
 
             yield return null;
         }
